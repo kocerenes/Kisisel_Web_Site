@@ -1,0 +1,179 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html { 
+    font-size: 10px;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+/*sayfa*/
+.container { 
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .2rem;
+    padding-right: .2rem;
+}
+
+.text-uppercase {
+    text-transform:uppercase;
+    
+}
+
+/*navbar*/
+nav {
+    width: 100%;
+    background-color: rgba(46, 43, 43, 0.966);
+    color: #fff;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+}
+
+
+#nav-links .nav-item {
+    float: left;
+    margin: .1rem;
+}
+
+#nav-links .nav-link {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    padding: .6rem;
+    letter-spacing: .2rem;
+}
+
+.right {
+    float: right;
+    display:block;
+}
+
+#nav-links .nav-link:hover {
+    color: rgb(48, 119, 65);
+}
+
+
+hr {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+ul {
+    list-style-type:none;
+}
+
+.kenarlik{
+    border-width: 3px;
+    border-color:linen;
+    border-style: solid;
+    border-radius: 2rem;
+}
+
+/* footer */
+footer {
+    padding: 3px;
+    background-color: rgba(46, 43, 43, 0.966);
+    color: white;
+} 
+  
+.text{
+      font-size: 20px;
+      padding: 1.5rem;
+} 
+
+.f-div-l{
+      max-width: 33.33%;
+      padding: 10px;
+} 
+
+.f-div-c{
+    margin-left: 400px;
+    max-width: 33.33%;
+    padding: 10px;
+}
+
+.f-div-r{
+    margin-left: 400px;
+    max-width: 33.33%;
+    padding: 10px;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover{
+    color: rgb(48, 119, 65);
+    text-decoration: underline;
+}
+
+/*orta kısım*/
+.anailetisim {
+    background: #95cb0e;
+    padding-left: 70px;
+    padding-top: 50px;
+    color:#fff;
+    height: 800px;
+}
+.anailetisim h2 {
+    font:300 30px 'Raleway',sans-serif;
+}
+
+.anailetisim .iletisimform input{
+    color:#795548;
+    font:300 16px 'Raleway',sans-serif;
+    padding:12px 18px;
+    border-radius: 8px;
+}
+
+.anailetisim .iletisimform select {
+    font:300 16px 'Raleway',sans-serif;
+    padding:12px 18px;border-radius: 8px;
+    -webkit-appearance: inherit;
+} 
+
+.anailetisim .iletisimbilgi table td {
+    vertical-align:top; 
+    color:#fff; 
+    font-weight:300; 
+    padding:0 12px 40px 12px; 
+    font-size: 17px;
+}
+
+option{
+    color: #000;
+}
+
+textarea::-webkit-input-placeholder{
+    font-size: 14px;
+}
+
+
