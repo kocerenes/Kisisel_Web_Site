@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <title>İletişim</title>
+    
+</head>
+<body>
+    <nav>
+        <div class="container clearfix">
+            
+            <div id="nav-links">
+                <ul>
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link text-uppercase">
+                            Anasayfa
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../sehrimiz/index.html" class="nav-link text-uppercase">
+                            şehrimiz
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../takimimiz/index.html" class="nav-link text-uppercase">
+                            takımımız
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../hava_durumu/index.html" class="nav-link text-uppercase">
+                            Hava Durumu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../ozgecmis/index.html" class="nav-link text-uppercase">
+                            özgeçmiş
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-uppercase">
+                            iletişim
+                        </a>
+                    </li>
+
+                    <div class="right">
+                        <li class="nav-item">
+                            <a href="../Giris_sayfasi/index.php" class="nav-link text-uppercase kenarlik">
+                                giriş yap
+                            </a>
+                        </li>
+                    </div>                
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+ 
+
+    <div class="anailetisim container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="iletisimform">
+                <div class="mbottom">
+                    <h2>   İletişim Bilgilerinizi Bırakın  </h2>
+                    <br>
+                </div>
+                <form name="form" id="form" role="form" method="POST" action="formTasi.php">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control input-lg" placeholder="Adınız" required="" name="isim" id="isim" value="">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control input-lg" placeholder="Soyadınız" required="" name="soyisim" id="soyisim" value="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="email" name="email" placeholder="E-Posta Adresiniz" required="" class="form-control input-lg" id="email" value="">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="phone" name="tel" placeholder="Telefon" required="" class="form-control input-lg" id="telno" value="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- sebep seç -->
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="hatalar" class="h3">Sebep belirtiniz  </label>
+                            <select name="hatalar" id="hatalar" class="w-100 text-dark">
+                                <option value=""></option>
+                                <option value="Giriş hatası alıyorum.">Giriş hatası alıyorum.</option>
+                                <option value="Canlı destek almak istiyorum.">Canlı destek almak istiyorum.</option>
+                                <option value="Proje danışmanlığı almak istiyorum.">Proje danışmanlığı almak istiyorum.</option>
+                                <option value="Uygulama yaptırmak istiyorum.">Uygulama yaptırmak istiyorum.</option>
+                            </select>
+                        </div>  
+                    </div>
+                </div>
+
+                <!-- şube seç -->
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-12">
+                                <label for="subeler" class="h3 w-100">Şubemizi seçiniz</label>
+                                <select list="subeler" name="subeler" id="subeler" class="w-100 text-dark">
+                                    <datalist>
+                                        <option value=""></option>
+                                        <option value="Serdivan">Serdivan</option>
+                                        <option value="İzmit">İzmit</option>
+                                        <option value="Gebze">Gebze</option>
+                                        <option value="Üsküdar">Üsküdar</option>
+                                    </datalist>
+                                </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+
+                <!-- CHECKBOX --> <!-- radio -->
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="h3">Hangi yolla ulaşalım :</p>
+                            <input type="checkbox" id="ulasim1" name="ulasim1" value="">
+                            <label for="ulasim1" class="h4"> E-mail</label><br>
+                            <input type="checkbox" id="ulasim2" name="ulasim2" value="telefon">
+                            <label for="ulasim2" class="h4"> Telefon</label><br>
+                            <input type="checkbox" id="ulasim3" name="ulasim3" value="fax">
+                            <label for="ulasim3" class="h4"> Fax</label>
+                            <p>*seçmek zorunlu değildir.</p><br>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="h3">Lütfen cinsiyetinizi seçiniz</p>
+                            <input type="radio" id="erkek" name="gender" value="erkek">
+                            <label for="erkek" class="h4">Erkek</label><br>
+                            <input type="radio" id="kadın" name="gender" value="kadın">
+                            <label for="kadın" class="h4">Kadın</label><br>
+                            <input type="radio" id="diger" name="gender" value="-">
+                            <label for="diger" class="h4">Belirtmek istemiyorum</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- mesaj -->
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-12">
+                          <textarea name="mesaj" id="mesaj" class="form-control" rows="6" cols="80" placeholder="Mesajınızı giriniz.."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-lg btn-primary" name="submit" id="submit" onclick="return kontrol();">FORMU GÖNDER</button>
+                <button href="#" type="reset" class="btn btn-reset btn-lg btn-success" onclick="return temizle();">FORMU TEMİZLE</button>
+            </form>
+                
+              </div>
+        </div>
+
+        <!-- iletişim bilgilerimiz -->
+        <div class="col-md-4 iletisimbilgi">
+            <h2>   İletişim Bilgilerimiz   </h2>
+              <table class="mtop">
+                <tbody>
+                    <tr>
+                        <td><strong>    Adres:      </strong></td>
+                        <td>
+                            Kemalpaşa Esentepe Kampüsü, Üniversite Cd., 54050 Serdivan/Sakarya
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>   Telefon:    </strong></td>
+                        <td>+90 451 341 06 **- ***<br>+90 313 444 19 96 - ***</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fax: </strong></td>
+                        <td>+90 456 312 ** **</td>
+                    </tr>
+                    <tr>
+                        <td><strong>E-Mail: </strong></td>
+                        <td>eneskocer161@gmail.com<br>enes.kocer1@ogr.sakarya.edu.tr</td>
+                    </tr>
+              </tbody>
+            </table>
+        </div>
+    </div>
+ </div>
+</div>
+
+
+
+    <footer >
+        <div class="d-inline-block f-div-l">
+            <p class="text">Produced by Enes Koçer </p>
+        </div>
+
+        <div class="d-inline-block f-div-c">
+            <p class="text">2021 Mayıs</p>
+        </div>
+
+        <div class="d-inline-block f-div-r">
+            <a href="#"><p class="text">Sayfa başına git -> </p></a>
+        </div>
+        
+        
+    </footer>
+
+    <script src="control.js"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

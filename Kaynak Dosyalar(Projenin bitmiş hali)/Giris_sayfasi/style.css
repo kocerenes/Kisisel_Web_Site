@@ -1,0 +1,153 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html { 
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Lato','sans-serif';
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-image: url('../img/login.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.clearfix::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/*navbar*/
+nav {
+    width: 100%;
+    background-color: rgba(46, 43, 43, 0.966);
+    color: #fff;
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#nav-links .nav-item {
+    float: left;
+    margin: .1rem;
+}
+
+#nav-links .nav-link {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    padding: .6rem;
+    letter-spacing: .2rem; 
+}
+
+.right {
+    float: right;
+    display:block;
+}
+
+#nav-links .nav-link:hover {
+    color: rgb(48, 119, 65);
+}
+
+nav ul {
+    list-style-type:none;
+}
+
+.kenarlik{
+    border-width: 3px;
+    border-color:linen;
+    border-style: solid;
+    border-radius: 2rem;
+}
+
+/* form */
+.form{
+    margin: auto;
+    width: 310px;
+    height: 200px;
+    padding: 30px;
+    border: solid thin grey;
+    margin-top: 150px;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.form h3{
+    padding-bottom: 5px;
+}
+
+.info{
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 250px;
+    border: none;
+    border-bottom: solid thin #bbb;
+}
+
+input[type="submit"]{
+    border: none;
+    padding: 10px;
+    width: 150px;
+    float: right;
+    background-color: rgb(69, 114, 126);
+    color: #fff;
+    cursor: pointer;    
+}
+
+
+/* footer */
+footer {
+    padding: 3px;
+    background-color: rgba(46, 43, 43, 0.966);
+    color: white;
+    margin-top: 205px;
+  } 
+
+  .text{
+      font-size: 20px;
+      padding: 1.5rem;
+  } 
+
+  .f-div-l{
+      max-width: 33.33%;
+      padding: 10px;
+  } 
+
+.f-div-c{
+    margin-left: 400px;
+    max-width: 33.33%;
+    padding: 10px;
+}
+
+.f-div-r{
+    margin-left: 400px;
+    max-width: 33.33%;
+    padding: 10px;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover{
+    color: rgb(48, 119, 65);
+    text-decoration: underline;
+}
